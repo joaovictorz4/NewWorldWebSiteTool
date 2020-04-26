@@ -81,7 +81,6 @@ header{
     background-color: #232220;
     padding: 0;
     position: relative;
-    border-bottom: 1px solid #FFB10F;
 }
 .hamburguer-menu{
     background: transparent;
@@ -113,7 +112,9 @@ nav ul li a{
 }
 nav ul li:hover{
     background-color: #141312;
+    padding-bottom: 9px;
     color:#FFB10F;
+    border-bottom: 1px solid #FFB10F;
 }
 nav ul li:hover .letter{
     background-color: #141312;
