@@ -1,11 +1,18 @@
+@font-face{
+    src: url(fonts/Amazon\ Ember\ Regular.ttf);
+    font-family: amazon;
+}
+
 *{
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
+    
+    font-family: amazon;
 }
 body{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: amazon;
     background-color: #272624;;
     color: white;
 } 
@@ -58,19 +65,19 @@ p,label,strong{
 .bedge.new{
     background: #ff205f
 }
-.shade{
+/*.shade{
     position: absolute;
     z-index: 1;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    //background: rgba(0, 0, 0, 0.7);
-}
+    background: rgba(0, 0, 0, 0.7);
+}*/
 
 
 header{
-    font-size: 20px;
+    font-size: 0.65em;
     background-color: #232220;
     padding: 0;
     position: relative;
@@ -94,33 +101,65 @@ header{
 nav ul{
     list-style-type: none;  
     padding: 0px;
-    margin: 10px 0 0; 
 }
 nav ul li{
     display: inline-block;
     font-size: 1em;
-    padding: 20px 18px;
+    padding: 10px 18px;
 }
 nav ul li a{
     color: #eee;
     font-weight: 600;
 }
-nav ul li a:hover{
+nav ul li:hover{
+    background-color: #141312;
+    color:#FFB10F;
+}
+nav ul li:hover .letter{
+    background-color: #141312;
     color:#FFB10F;
 }
 
+
+#search-login-register{
+    float: right;
+}
+#search{
+    margin-left: 20%;
+}
 #search-button{
-    border: 1px solid white;
-    font-size: 15px;
-    background-color: #272624;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 2px 5px;
+    margin: 3px;
+    height: 20px;
+    font-size: 0.85em;
+    background-color: #eee;
+}
+#search-button:focus{
+    outline: none;
+    border: 1px solid #0097CF;
+    border-radius: 5px;
 }
 #login-register-button{
-    background: #FFB10F;
-    border-radius: 15px;
-    padding: 10px 15px;
+    background: #272624;
+    border-radius: 2px;
+    color: #eee;
+    margin: 3px;
+    border: 1px solid #eee;
+    height: 25px;
+    padding: 2px 5px;
     font-size: 0.85em;
     font-weight: 600;
 }
+#login-register-button:hover{
+    color: #FFB10F;
+    border-color: #FFB10F;
+}
+#login-register-button:focus{
+    outline: 0;
+}
+
 #hero-image{
     background: url(Imgs/HOME_Hero_KeyArt-L-mobile-768x720.jpg) top center no-repeat;
     height: 820px;
