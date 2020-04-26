@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #272624;;
+    color: white;
+} 
+h1,h2,h3,h4,h5{
+    line-height: 1.5;
+    font-weight: 300;
+    margin: 0.5em;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.5em;
+}
+h2{
+    font-size: 2em;
+}
+h3{
+    font-size: 1.6em;
+}
+h4{
+    font-size: 1.4em;
+}
+h5{
+    font-size: 1.2em;
+}
+a{
+    color: white;
+}
+p,label,strong{
+    line-height: 2;
+    font-size: 1.45em;
+    font-weight: 300;
+}
+.flex{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.bedge{
+    padding: 9px 20px;
+    color: #eee;
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.75em;
+}
+.bedge.new{
+    background: #ff205f
+}
+.shade{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    //background: rgba(0, 0, 0, 0.7);
+}
+
+
+header{
+    font-size: 20px;
+    background-color: #232220;
+    padding: 0;
+    position: relative;
+    border-bottom: 1px solid #FFB10F;
+}
+.hamburguer-menu{
+    background: transparent;
+    border: 1px solid #FFB10F;
+    padding: 3px 5px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburguer-menu .strip{
+    display: block;
+    height: 1px;
+    background-color: #FFB10F;
+    margin: 4px 0;   
+}
+nav ul{
+    list-style-type: none;  
+    padding: 0px;
+    margin: 10px 0 0; 
+}
+nav ul li{
+    display: inline-block;
+    font-size: 1em;
+    padding: 20px 18px;
+}
+nav ul li a{
+    color: #eee;
+    font-weight: 600;
+}
+nav ul li a:hover{
+    color:#FFB10F;
+}
+
+#search-button{
+    border: 1px solid white;
+    font-size: 15px;
+    background-color: #272624;
+}
+#login-register-button{
+    background: #FFB10F;
+    border-radius: 15px;
+    padding: 10px 15px;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+#hero-image{
+    background: url(Imgs/HOME_Hero_KeyArt-L-mobile-768x720.jpg) top center no-repeat;
+    height: 820px;
+}
+.hero-marketing-text{
+    max-width: 1200px;
+    margin: -30px auto 0;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+}
+.hero-marketing-text h1{
+    color: #eee;
+    font-size: 3.5em;
+    font-weight: 300;
+    margin: 0.5em 0;
+}
+.hero-marketing-text span{
+    color: #FFB10F;
+    
+}
+.hero-marketing-text h5{
+    color: #eee;
+    font-size: 0.85em;
+    font-weight: 300;
+    max-width: 500px;
+    line-height: 2;
+    margin-bottom: 2.5em;
+    
+}
+.hero-marketing-text button{
+    background-color: #FFB10F;
+    color: #131313;
+    padding: 10px 10px;
+    font-size: 0.85em;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
